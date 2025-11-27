@@ -1,0 +1,13 @@
+//⚠️Detalle: rutas ABSOLUTAS ya que ahora se usaran desde 2 html en distintas ubicaciones
+export const productos = [
+  { id: "1", nombre: "CG 150", img: "img/CG 150.jpg", precio: 2750000 },
+  { id: "2", nombre: "Blitz 110", img: "img/Blitz 110.jpeg", precio: 1562000 },
+  { id: "3", nombre: "MAX 110", img: "img/Max 110.jpg", precio: 1500000 },
+  { id: "4", nombre: "SKUA 200", img: "img/SKUA 200.jpg", precio: 1289523 },
+  {
+    id: "5",
+    nombre: "Strato Alpino 150",
+    img: "img/Strato Alpino 150.jpg",
+    precio: 1325999,
+  },
+];

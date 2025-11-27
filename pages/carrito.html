@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <p class="header__logo">
+        <a href="../index.html">Sucursal Martinez - San Isidro</a>
+      </p>
+      <nav class="header__nav">
+        <ul>
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="./contacto.html">Contacto</a>
+          </li>
+          <li>
+            <a href="./carrito.html" class="carrito-icono">
+              🛒 <span id="contador-carrito">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Carrito de compras</h1>
+      <section id="contenedor-carrito"></section>
+      <div class="acciones-carrito" id="acciones-carrito"></div>
+      <section id="resumen-carrito"></section>
+    </main>
+    <footer class="footer">
+      <p>Diseño JMV</p>
+      <nav>
+        <ul>
+          <li>Instagram</li>
+        </ul>
+      </nav>
+    </footer>
+    <script type="module" src="../js/carrito.js"></script>
+  </body>
+</html>
