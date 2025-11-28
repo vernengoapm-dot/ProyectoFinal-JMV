@@ -14,21 +14,25 @@ document.addEventListener("DOMContentLoaded", () => {
   const carrito = obtenerCarrito();
   actualizarContador(carrito);
 
-  fetch("../data/productos.json")
+  fetch("./data/productos.json")
     .then((res) => {
       if (!res.ok) {
         throw new Error(`Error HTTP status: ${res.status}`);
       }
+
       return res.json();
     })
 
-    .then((tarjeta) => {
-      tarjeta.forEach((producto) => {
+    .then((data) => {
+      data.forEach((producto) => {
         // creamos los articles y sus contenidos
         const tarjeta = document.createElement("article");
         tarjeta.classList.add("tarjeta-producto");
+        tarjeta.innerHTML = `
+        <img src ="${producto.img}" alt="${producto.nombre}"/>
+        <h3 class ="h3">${producto.nombre}</h3>`;
 
-        const img = document.createElement("img");
+        /*const img = document.createElement("img");
         img.src = `./${producto.img}`;
         img.alt = producto.nombre;
 
@@ -44,15 +48,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         boton.addEventListener("click", () => {
           agregarAlCarrito(producto);
-        });
+        });*/
 
         // Armar la estructura
-        tarjeta.appendChild(img);
+        /* tarjeta.appendChild(img);
         tarjeta.appendChild(titulo);
         tarjeta.appendChild(precio);
-        tarjeta.appendChild(boton);
+        tarjeta.appendChild(boton);*/
 
         contenedor.appendChild(tarjeta);
       });
+    })
+    .catch((err) => {
+      console.log(err);
     });
 });
