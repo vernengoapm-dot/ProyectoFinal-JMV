@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // creamos los articles y sus contenidos
         const tarjeta = document.createElement("article");
         tarjeta.classList.add("tarjeta-producto");
-        tarjeta.innerHTML = `
+        /*tarjeta.innerHTML = `
         <img src ="${producto.img}" alt="${producto.nombre}"/>
-        <h3 class ="h3">${producto.nombre}</h3>`;
+        <h3 class ="h3">${producto.nombre}</h3>`;*/
 
-        /*const img = document.createElement("img");
+        const img = document.createElement("img");
         img.src = `./${producto.img}`;
         img.alt = producto.nombre;
 
@@ -48,13 +48,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         boton.addEventListener("click", () => {
           agregarAlCarrito(producto);
-        });*/
+        });
 
         // Armar la estructura
-        /* tarjeta.appendChild(img);
+        tarjeta.appendChild(img);
         tarjeta.appendChild(titulo);
         tarjeta.appendChild(precio);
-        tarjeta.appendChild(boton);*/
+        tarjeta.appendChild(boton);
 
         contenedor.appendChild(tarjeta);
       });
