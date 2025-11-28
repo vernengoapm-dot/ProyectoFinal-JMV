@@ -2,7 +2,7 @@
   {
     "id": "1",
     "nombre": "CG 150",
-    "img": "./img/CG 150.jpg",
+    "img": "img/CG 150.jpg",
     "precio": 2750000
   },
   {

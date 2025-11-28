@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return res.json();
     })
 
-    .then((data) => {
-      data.forEach((producto) => {
+    .then((tarjeta) => {
+      tarjeta.forEach((producto) => {
         // creamos los articles y sus contenidos
         const tarjeta = document.createElement("article");
         tarjeta.classList.add("tarjeta-producto");
